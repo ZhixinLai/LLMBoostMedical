@@ -246,33 +246,6 @@ def evaluate_cam(data_loader, model, device, model_name, dataset_path):
         print("Folder created:", output_path)
     else:
         print("Folder already exists:", output_path)
-    # -1 norm2 不行
-    # -1 norm1 还可以
-    # -2 norm1 不太行
-    # -2 norm2 > -2 norm1
-    # -4 norm1 > -2 norm2
-    # calculate grad-cam
-    # for index, (images, target) in enumerate(data_loader):
-    #     images = images.to(device)
-    #
-    #     input_tensor = images
-    #     cam = GradCAM(model=model, target_layers=[model.blocks[-1].norm2], reshape_transform=reshape_transform)
-    #     target_category = None  # can be a class or none
-    #     grayscale_cam = cam(input_tensor=input_tensor, targets=target_category)
-    #     grayscale_cam = grayscale_cam[0, :]
-    #
-    #     # add grad-cam to original image
-    #     rgb_img = cv2.imread(root_path + "/test/0/" + str(index) + ".jpg", 1)[:, :, ::-1]
-    #     rgb_img_normalized = (rgb_img.astype(np.float32) / 255.0).clip(0, 1)
-    #     rgb_img_normalized_resized = cv2.resize(rgb_img_normalized, (224, 224))
-    #     rgb_img_resized = cv2.resize(rgb_img, (224, 224))
-    #
-    #     visualization = show_cam_on_image(rgb_img_normalized_resized, grayscale_cam)
-    #
-    #     # save visualization image
-    #     cv2.cvtColor(visualization, cv2.COLOR_RGB2BGR, visualization)
-    #     cv2.imwrite(f'{output_path}/cam_{str(index)}.jpg', visualization)
-    #     cv2.imwrite(f'{output_path}/origin_{str(index)}.jpg', rgb_img_resized)
 
     for index, (images, target) in enumerate(data_loader):
         images = images.to(device)
