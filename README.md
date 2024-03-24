@@ -7,10 +7,11 @@ Language Models are Free Boosters for Biomedical Imaging Tasks (TO ADD)
 
 1. [Introduction](#introduction)
 2. [Model](#model)
-3. [Environment](#environment)
-4. [Data](#data)
-5. [Training and Evaluation](#training-and-evaluation)
-6. [Model Zoo](#model-zoo)
+3. [Repo Structure](#Repo-Structure)
+4. [Environment](#environment)
+5. [Data](#data)
+6. [Training and Evaluation](#training-and-evaluation)
+7. [Model Zoo](#model-zoo)
 6. [Adding New Datasets](#adding-new-datasets)
 7. [Results](#results)
 8. [Heatmap](#Heatmap)
@@ -23,6 +24,26 @@ In this study, we uncover the unexpected efficacy of residual-based large langua
 # Model
 
 ![model](assets/model.png)
+
+# Repo Structure
+
+<pre>
+- 2D_classification
+    |-datasets
+    |-models
+    |-output
+    |-llama
+    |-main.py
+    |-main-cam.py
+    
+- 3D_classification
+    |-datasets
+    |-models
+    |-output
+    |-llama
+    |-main.py
+    ...
+</pre>
 
 # Environment
 We used Python 3.8 for our experiments. The environment can be set up by following three steps:
@@ -82,7 +103,7 @@ python ./main.py --mode test --dataset fracturemnist3d --model vivit_llm --llm_m
 
 # Adding New Datasets
 
-To add new 2D image dataset, you can use the following steps:
+To add a new 2D image dataset, you can use the following steps:
 
 1. Put the new dataset under the ./2D_classification/datasets
 2. The new dataset follows the structure 
@@ -97,26 +118,6 @@ To add new 2D image dataset, you can use the following steps:
     |-test
             |-label1
             |-label2
-</pre>
-
-# Structure of the repo
-
-<pre>
-- 2D_classification
-    |-datasets
-    |-models
-    |-output
-    |-llama
-    |-main.py
-    |-main-cam.py
-    
-- 3D_classification
-    |-datasets
-    |-models
-    |-output
-    |-llama
-    |-main.py
-    ...
 </pre>
 
 # Results
@@ -159,7 +160,7 @@ python main-cam.py --model vit_res_in_llama_small_patch16_224 --data-path ./data
 
 # Citing this repo 
 (To add)
-If you use SubTab framework in your own studies, and work, please cite it by using the following:
+If you use the repo in your studies and work, please cite it by using the following:
 
 ```
 
