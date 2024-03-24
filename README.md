@@ -143,7 +143,7 @@ Results at the end of training is saved under ```./output``` directory. Results 
 
 # Heatmap
 We get the heatmap of ViT-S and ViT-S with R-LLM. 
-![method](assets/heatmap.png)  
+![Heatmap](assets/heatmap.png)  
 You can get the heatmap of each layer of 2D image classification models. First, go to ./2D_classification and prepare the dataset under ./datasets. Second, update the layer in the func evaluate_cam pf engine.py. Then, run the cmd line below and the heatmap will be generated under ./dataset/CamSample
 
 ```
