@@ -5,7 +5,7 @@
 [Language Models are Free Boosters for Biomedical Imaging Tasks](https://arxiv.org/abs/2403.17343)
 
 
-Zhixin Lai, Jing Wu, Suiyao Chen, Yucheng Zhou, Naira Hovakimyan
+Zhixin Lai*, Jing Wu*, Suiyao Chen*, Yucheng Zhou, Naira Hovakimyan
 
 # Table of Contents:
 
