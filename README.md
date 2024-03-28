@@ -152,18 +152,22 @@ python main-cam.py --model vit_res_in_llama_small_patch16_224 --data-path ./data
 ```
 
 # Citing the paper 
-(To add)
-
 ```
-
+@misc{lai2024language,
+      title={Language Models are Free Boosters for Biomedical Imaging Tasks}, 
+      author={Zhixin Lai and Jing Wu and Suiyao Chen and Yucheng Zhou and Naira Hovakimyan},
+      year={2024},
+      eprint={2403.17343},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 # Citing this repo 
-(To add)
 If you use the repo in your studies and work, please cite it by using the following:
 
 ```
-
+Zhixin Lai, Jing Wu, Suiyao Chen, Yucheng Zhou, Naira Hovakimyan. 2024. "LLMBoostMedical." GitHub. https://github.com/ZhixinLai/LLMBoostMedical/
 ```
 
 # Acknowledgment
