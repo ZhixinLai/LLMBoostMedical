@@ -169,7 +169,7 @@ If you use the repo in your studies and work, please cite it by using the follow
 # Acknowledgment
 This project has been inspired by or directly incorporates components from the following projects:
 
-- [LM4VisualEncoding](https://github.com/username/repository](https://github.com/ziqipang/LM4VisualEncoding) alongside the paper [Frozen Transformers in Language Models are Effective Visual Encoder Layers](https://arxiv.org/abs/2310.12973) have been pivotal in shaping our approach. Drawing upon their insights, we adapted and expanded upon the image classification framework to accommodate 3D imaging data, experimenting with various configurations of residual blocks to enhance the model's performance on the medical image dataset.
+- [LM4VisualEncoding](https://github.com/ziqipang/LM4VisualEncoding) alongside the paper [Frozen Transformers in Language Models are Effective Visual Encoder Layers](https://arxiv.org/abs/2310.12973) have been pivotal in shaping our approach. Drawing upon their insights, we adapted and expanded upon the image classification framework to accommodate 3D imaging data, experimenting with various configurations of residual blocks to enhance the model's performance on the medical image dataset.
 
 Special thanks to the developers and contributors of the above projects for their valuable work. Your efforts have greatly assisted in the development of this project.
 
