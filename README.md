@@ -167,12 +167,6 @@ python main-cam.py --model vit_res_in_llama_small_patch16_224 --data-path ./data
 }
 ```
 
-# Citing this repo 
-If you use the repo in your studies and work, please cite it by using the following:
-
-```
-Zhixin Lai, Jing Wu, Suiyao Chen, Yucheng Zhou, Naira Hovakimyan. 2024. "LLMBoostMedical." GitHub. https://github.com/ZhixinLai/LLMBoostMedical/
-```
 
 # Acknowledgment
 This project has been inspired by or directly incorporates components from the following projects:
